@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1> My Profile</h1>
+        <form>
+            <div>
+                <label for="profile-image">Profile Picture</label>
+                <div class="profile-image"></div>
+                <input type="file" id="profile-image-upload" class="file-upload" accept="image/*">
+            </div>
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="field">
+                <label for="gender">Gender</label>
+                <div class="radio-group">
+                    <input id="male" type="radio" name="gender" value="male" checked>
+                    <label for="male">Male</label>
+                    <input id="female" type="radio" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="field">
+                <label for="age">Age</label>
+                 <input type="text" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+            <div class="field">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+            </div>
+            <div class="field">
+                <label for="description">About Me</label>
+                <textarea id="description" name="description" placeholder="Write a short description about yourself"></textarea>
+            </div>
+            <div class="field">
+                <label for="partner-preferences">Partner Preferences</label>
+                <textarea id="partner-preferences" name="partner-preferences" placeholder="Write about your preferences in a partner"></textarea><br>
+            </div>
+            <div class="buttons">
+                <input type="button" value="Edit">
+                <input type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
